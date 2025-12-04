@@ -70,7 +70,6 @@ export default function MapPage() {
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
     libraries: LIBRARIES,
   });
-  console.log("Google Maps Key:", import.meta.env.VITE_GOOGLE_MAPS_API_KEY);
 
   useEffect(() => {
     if (!isLoaded || !mapRef.current) return;
